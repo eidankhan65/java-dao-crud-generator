@@ -963,7 +963,7 @@ setFunction.append(ComponentMdf.getSet(column,ind++,tableVar+".get"+Functions.ge
         functionContent.append(String.format("\n try{ \n"));
 
         functionContent.append(String.format(""
-                + "Class.forName(com.mysql.jdbc.Driver;\n);"
+                + "Class.forName(\"com.mysql.jdbc.Driver\")\n;"
                 + "Connection connection=" + connectionClassName + ".getConnection(\"" + db.getDbName() + "\","
                 + "\"" + db.getUserName() + "\","
                 + "\"" + db.getPassword() + "\""
